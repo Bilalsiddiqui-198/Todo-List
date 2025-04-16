@@ -5,13 +5,13 @@ const input = document.querySelector("#Add_edit");
 button.addEventListener("click", (e)=>{
     let div=document.createElement('div'); //new div create hoga
     div.classList.add("list"); //new div ko "list" class assign krne k lye
-     div.innerHTML = `  //html elements add krne k lye div me
+     div.innerHTML = `  
     <p>${input.value || "Add your tasks..."}</p>
     <div class="icons">
       <i class="fa-solid fa-pen-to-square edit_list"></i>
       <i class="fa-solid fa-trash-can delete"></i>
     </div>
-  `;
+  `;//html elements add krne k lye div me
     
     task.append(div);
     input.value = ''; //input field ko refresh krne k lye take old txt hat jae
